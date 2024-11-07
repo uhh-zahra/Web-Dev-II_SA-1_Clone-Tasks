@@ -1,0 +1,331 @@
+/* Importing fonts from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Protest+Guerrilla&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+/* Styling for the body of the document */
+body {
+    background-color: #e9e9e9;  /* Light gray background color for the page */
+    margin: auto;               /* Centers the content in the viewport */
+    color: black;               /* Default text color */
+    font-family: "Josefin Sans", sans-serif;  /* Primary font family for body text */
+}
+
+/* Styling for header elements (h1, h2, h3) */
+h1, h2, h3 {
+    margin: 0%;                 /* Remove default margin */
+    font-family: "Protest Guerrilla", sans-serif;  /* Font family for headings */
+}
+
+/* Header section styling */
+header {
+    margin: 50px;               /* Margin around the header section */
+    margin-bottom: 0px;         /* Override bottom margin */
+    display: flex;              /* Flex container for layout */
+    flex-direction: column;     /* Stack items vertically */
+    align-items: center;        /* Center items horizontally */
+}
+
+/* Logo styling within header */
+.logo img {
+    width: 200px;               /* Fixed width for logo image */
+    height: auto;               /* Maintains aspect ratio */
+}
+
+/* Navigation bar styling */
+nav {
+    width: 50%;                 /* Set width of navigation bar */
+    margin: 50px;               /* Margin around the navigation */
+}
+
+/* Styling for navigation list */
+header nav ul {
+    list-style-type: none;      /* Remove bullet points */
+    display: flex;              /* Flex layout for list items */
+    justify-content: space-between; /* Evenly space navigation links */
+    padding: 0%;                /* Remove padding */
+    text-align: center;         /* Center-align text */
+}
+
+/* Styling for navigation links */
+nav ul li a {
+    text-decoration: none;      /* Remove underline from links */
+    color: black;               /* Set link color */
+}
+
+/* Main content area styling */
+main {
+    background-color: white; /* White background for main content */
+    width: 70%;              /* Set main content width */
+    margin: auto;            /* Center align the main content */
+}
+
+/* Main heading styling */
+main h1 {
+    font-size: 90px;         /* Large font size for main heading */
+}
+
+/* Styling for sub-headings */
+.sub-heading {
+    font-size: 40px;         /* Font size for sub-heading */
+}
+
+/* Padding for intro and multi-paragraph sections */
+.intro, .multi-paragraph {
+    padding: 50px;           /* Adds space around content */
+}
+
+/* Introduction paragraph styling */
+.intro p {
+    font-size: larger;       /* Larger font size for readability */
+    margin-bottom: 0%;       /* Removes extra margin */
+}
+
+/* Multi-paragraph styling for a multi-column layout */
+.multi-paragraph {
+    column-count: 3;         /* Splits text into 3 columns */
+    column-gap: 50px;        /* Space between columns */
+    padding-top: 0px;        /* Adjusts padding at the top */
+}
+
+/* Image container as a grid layout */
+.image-container {
+    display: grid;           /* Creates a grid container */
+    grid-template-columns: repeat(4, 1fr); /* 4 equal-width columns */
+}
+
+/* Image styling within the grid container */
+.image-container img {
+    width: 100%;             /* Makes image width fill grid cell */
+    height: 100%;            /* Makes image height fill grid cell */
+    object-fit: cover;       /* Ensures image covers area without distortion */
+}
+
+/* Featured album spans multiple rows and columns */
+.featured-album {
+    grid-area: 1 / 1 / span 2 / span 2; /* Positions and sizes featured album */
+}
+
+/* Position for album cover 1 */
+.album-cover-1 {
+    grid-area: 1 / 3 / span 1 / span 1; /* Sets grid position for album cover */
+}
+
+
+/* Positioning for additional album covers in the grid layout */
+.album-cover-2 {
+    grid-area: 1 / 4 / span 1 / span 1; /* Places album cover 2 in the first row, fourth column */
+}
+
+.album-cover-3 {
+    grid-area: 2 / 3 / span 1 / span 1; /* Places album cover 3 in the second row, third column */
+}
+
+.album-cover-4 {
+    grid-area: 2 / 4 / span 1 / span 1; /* Places album cover 4 in the second row, fourth column */
+}
+
+/* Styling for the author section */
+.author-section {
+    margin: auto;              /* Centers the author section */
+    width: 75%;                /* Sets width of the section */
+    display: flex;             /* Flex layout for horizontal alignment */
+    align-items: center;       /* Align items vertically in the center */
+    padding: 50px;             /* Adds padding around the section */
+    gap: 50px;                 /* Spacing between items in the flex container */
+}
+
+/* Styling for sub-heading in the author section */
+.author-section .sub-heading {
+    text-align: center;        /* Centers text within the sub-heading */
+    font-size: 50px;           /* Large font size for sub-heading */
+}
+
+/* Styling for the author image */
+.author-img img {
+    max-width: 200px;          /* Sets a maximum width for the image */
+    border-radius: 50%;        /* Makes the image circular */
+}
+
+/* Footer styling */
+footer {
+    width: 70%;                /* Footer width */
+    margin: auto;              /* Centers footer on the page */
+    background-color: #14181d; /* Dark background color */
+    color: white;              /* White text color */
+    box-sizing: border-box;    /* Ensures padding does not affect width */
+    padding: 20px;             /* Padding inside the footer */
+    text-align: center;        /* Centers text within the footer */
+}
+
+
+/* Media query for tablet and small desktop screens */
+@media screen and (max-width: 1023px) {
+
+    /* Adjust header and navigation margins */
+    header, nav {
+        margin: 30px;
+    }
+
+    /* Set navigation width and remove bottom margin */
+    nav {
+        width: 60%;
+        margin-bottom: 0%;
+    }
+
+    /* Main content area width adjustment */
+    main {
+        width: 80%;
+    }
+
+    /* Logo resizing for smaller screens */
+    .logo img {
+        width: 80px;
+        height: auto; /* Maintains aspect ratio */
+    }
+
+    /* Center align main heading and sub-heading with reduced font size */
+    main h1, .sub-heading {
+        text-align: center;
+        font-size: 50px;
+    }
+
+    /* Adjust padding for sub-heading within the intro section */
+    .intro .sub-heading {
+        box-sizing: border-box;
+        padding: 0px 82px;
+    }
+
+    /* Increase font size for paragraphs */
+    p {
+        font-size: larger;
+    }
+
+    /* Change multi-paragraph layout to a single column */
+    .multi-paragraph {
+        column-count: 1;
+    }
+
+    /* Adjust image container to use 2 columns instead of 4 */
+    .image-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Set grid area for each item in image container */
+    .image-container div {
+        grid-area: span 1;
+    }
+
+    /* Hide the fourth album cover on smaller screens */
+    .album-cover-4 {
+        display: none;
+    }
+
+    /* Reduce padding for intro and multi-paragraph sections */
+    .intro, .multi-paragraph {
+        padding: 30px;
+    }
+
+    /* Adjust author section to full width with smaller padding and gap */
+    .author-section {
+        margin: auto;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 30px;
+        gap: 30px;
+    }
+
+    /* Footer width adjustment */
+    footer {
+        width: 80%;
+    }
+}
+
+/* Media query for mobile devices with screens up to 719px */
+@media screen and (max-width: 719px) {
+
+    /* Adjust margins for header and navigation */
+    header, nav {
+        margin: 20px;
+    }
+
+    /* Main content area takes full width on small screens */
+    main {
+        width: 100%;
+    }
+
+    /* Set navigation width to 80% */
+    nav {
+        width: 80%;
+    }
+
+    /* Image container switches to a single-column layout */
+    .image-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    /* Reduce padding for intro and multi-paragraph sections */
+    .intro, .multi-paragraph {
+        padding: 20px;
+    }
+
+    /* Adjust padding for sub-heading within the intro section */
+    .intro .sub-heading {
+        padding: 0px 42px;
+    }
+
+    /* Stack author section elements vertically and reverse the order */
+    .author-section {
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 20px;  /* Adjust padding for smaller screens */
+        gap: 20px;      /* Reduce gap between elements */
+    }
+
+    /* Footer takes full width with reduced padding and smaller font */
+    footer {
+        width: 100%;
+        padding: 5px;
+        font-size: 18px;
+    }
+}
+
+
+/* Media query for very small screens and mobile devices up to 539px */
+@media screen and (max-width: 539px) {
+
+    /* Reduce margins for header and navigation */
+    header, nav {
+        margin: 12px;
+    }
+
+    /* Navigation takes full width */
+    nav {
+        width: 100%;
+    }
+
+    /* Reduce padding and gap for intro and multi-paragraph sections */
+    .intro, .multi-paragraph {
+        padding: 12px; /* Smaller padding for compact spacing */
+        gap: 12px;     /* Smaller gap between elements */
+    }
+
+    /* Adjust padding for sub-heading within the intro section */
+    .intro .sub-heading {
+        padding: 0px 52px;
+    }
+
+    /* Reduce padding for author section */
+    .author-section {
+        padding: 12px;
+    }
+
+    /* Smaller font size for footer text */
+    footer {
+        font-size: 16px;
+    }
+
+    /* Hide the fourth image in a photo grid on smaller screens */
+    .img-photo-4 {
+        display: none;
+    }
+}
