@@ -5,7 +5,7 @@ Welcome to the WebDev! This repository is dedicated to a series of web developme
 <br>
 **Exercise 1: Layout and Typography**
 <br><br><br>
-Task:
+**Task:**
 <br>
 Create a website for a blog post about the Erased Tapes Records music label.
 <br><br>
@@ -18,3 +18,14 @@ Requirements:
 <br><br><br>
 
 **Exercise 2:  Advanced Layout**
+<br><br>
+**Task:**
+<br>
+Develop the website for 'watch.it', a fictional movie streaming service.
+<br><br>
+**Requirements:**
+<br>
+- Follow the written specification and wireframe mock-ups to build the website.<br>
+- Address any unspecified details with appropriate design choices to maintain consistency and usability.<br>
+- Adapt the design for various screen sizes as outlined in the wireframes.<br>
+- Use the provided images and text from the assets folder.<br>
