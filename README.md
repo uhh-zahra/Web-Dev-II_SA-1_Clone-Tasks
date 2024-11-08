@@ -30,5 +30,6 @@ Develop the website for 'watch.it', a fictional movie streaming service.
 - Adapt the design for various screen sizes as outlined in the wireframes.<br>
 - Use the provided images and text from the assets folder.
 <br>
-hfdhfdhfb
+**Class Activity**
+  
   
