@@ -1,5 +1,5 @@
 # Web-Dev-II_SA-1_Clone-Task
-This repository contains a set of learning exercises and class activities designed to enhance skills in [subject or technology, if applicable].
+This repository contains a set of learning exercises and class activities.
 
 Exercise 1: [Brief description of Exercise]
 Exercise 2: [Brief description of Exercise 2]
