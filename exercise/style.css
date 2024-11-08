@@ -69,22 +69,12 @@ main h1 {
     font-size: 40px;         /* Font size for sub-heading */
 }
 
-/* Padding for intro and multi-paragraph sections */
-.intro, .multi-paragraph {
-    padding: 50px;           /* Adds space around content */
-}
-
-/* Introduction paragraph styling */
-.intro p {
-    font-size: larger;       /* Larger font size for readability */
-    margin-bottom: 0%;       /* Removes extra margin */
-}
-
-/* Multi-paragraph styling for a multi-column layout */
-.multi-paragraph {
-    column-count: 3;         /* Splits text into 3 columns */
-    column-gap: 50px;        /* Space between columns */
-    padding-top: 0px;        /* Adjusts padding at the top */
+.Headings {
+    column-count: 3; /*  3 equal columns */
+    column-gap: 40px; /* Space inbtween columns */
+    margin: 30px 0; /* Space above and below the headings section */
+    margin-left: 50px;
+    margin-right: 50px;
 }
 
 /* Image container as a grid layout */
@@ -124,9 +114,9 @@ main h1 {
     grid-area: 2 / 4 / span 1 / span 1; /* Places album cover 4 in the second row, fourth column */
 }
 
-/* Styling for the author section */
-.author-section {
-    margin: auto;              /* Centers the author section */
+/* Styling for the author part */
+.author-part {
+    margin: auto;              /* Centers the author part */
     width: 75%;                /* Sets width of the section */
     display: flex;             /* Flex layout for horizontal alignment */
     align-items: center;       /* Align items vertically in the center */
@@ -134,8 +124,8 @@ main h1 {
     gap: 50px;                 /* Spacing between items in the flex container */
 }
 
-/* Styling for sub-heading in the author section */
-.author-section .sub-heading {
+/* Styling for sub-heading in the author part */
+.author-part .sub-heading {
     text-align: center;        /* Centers text within the sub-heading */
     font-size: 50px;           /* Large font size for sub-heading */
 }
@@ -225,8 +215,8 @@ footer {
         padding: 30px;
     }
 
-    /* Adjust author section to full width with smaller padding and gap */
-    .author-section {
+    /* Adjust author part to full width with smaller padding and gap */
+    .author-part {
         margin: auto;
         width: 100%;
         box-sizing: border-box;
@@ -273,8 +263,8 @@ footer {
         padding: 0px 42px;
     }
 
-    /* Stack author section elements vertically and reverse the order */
-    .author-section {
+    /* Stack author part elements vertically and reverse the order */
+    .author-part {
         display: flex;
         flex-direction: column-reverse;
         padding: 20px;  /* Adjust padding for smaller screens */
@@ -314,8 +304,8 @@ footer {
         padding: 0px 52px;
     }
 
-    /* Reduce padding for author section */
-    .author-section {
+    /* Reduce padding for authors part */
+    .author-part {
         padding: 12px;
     }
 
