@@ -2,6 +2,7 @@
 Welcome to the WebDev! This repository is dedicated to a series of web development exercises and class activities designed to enhance your skills in creating responsive and visually appealing websites.
 
 **Contents**
+<br>
 **Exercise 1: Layout and Typography**
 <br><br><br>
 Task:
@@ -23,15 +24,15 @@ Develop the website for 'watch.it', a fictional movie streaming service.
 <br><br>
 Requirements:
 <br>
-- Follow the written specification and wireframe mock-ups to build the website.
-- Address any unspecified details with appropriate design choices to maintain consistency and usability.
-- Adapt the design for various screen sizes as outlined in the wireframes.
+- Follow the written specification and wireframe mock-ups to build the website.<br>
+- Address any unspecified details with appropriate design choices to maintain consistency and usability.<br>
+- Adapt the design for various screen sizes as outlined in the wireframes.<br>
 - Use the provided images and text from the assets folder.
 <br><br><br>
-Class Activities
+**Class Activities**
 <br>
 Engage in additional activities that reinforce web development concepts, including responsive design, user experience optimization, and modern layout techniques.
 <br><br><br>
-**Technologies Used**
-HTML5
+**Technologies Used**<br>
+HTML5<br>
 CSS3 (Flexbox, Grid)
