@@ -17,4 +17,4 @@ Requirements:
 - Utilize images and placeholder text from the assets folder.
 <br><br><br>
 
-**Exercise 1: Layout and Typography**
+**Exercise 2:  Advanced Layout**
