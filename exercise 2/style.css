@@ -1,0 +1,496 @@
+/* importing the necessary fonts from google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Teko:wght@300..700&display=swap');
+
+* {
+    margin: 0;/* Removes default margin */
+    box-sizing: border-box;/* Ensures padding and border are included in element's dimensions */
+    font-family: "Lato";/* Default font for all elements */
+    color: white;/* Default text color */
+    font-weight: 400; /* Default font weight */
+  }
+  
+  body {
+    padding-bottom: 10px; /* Adds bottom padding for spacing */
+    background-color: #231651;  /* Sets the background color */
+  }
+
+  /* Navigation bar styling */
+  nav {
+    background-color: #eef36a; /* Background color for contrast */
+    display: flex; /* Flexbox layout for alignment */
+    justify-content: space-between; /* Space out elements */
+    align-items: center; /* Vertically align items */
+    width: 100%; /* Full width */
+    height: 11vh;/* Responsive height */
+    box-shadow: 0px 7px 0 #070410; /* Adds shadow for depth */
+  }
+
+  /* Logo styling in nav */
+  nav h1{
+    font-family: "Teko"; /* Use Teko font */
+    font-weight: 900; /* Bold text */
+    margin-left: 10px; /* Adds left margin */
+    color: #4dccbd; /* Text color */
+    font-size: 50px; /* Large size */
+  }
+  
+  /* Navigation links styling */
+  .nav-links {
+    display: flex; /* Layout links in a row */
+    gap: 48px;/* Space between links */
+  }
+  
+  .nav-links a {
+    font-family: "Lato", sans-serif; /* Use Lato font */
+    position: relative; /* Required for the pseudo-element */
+    color: #070410;  /* Link text color */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+/* Underline animation for navigation links */
+.nav-links a::after {
+    content: ""; /* Creates a pseudo-element */
+    position: absolute; /* Positioned relative to parent */
+    bottom: 0; /* Aligns at the bottom of the text */
+    left: 0; /* Starts underline from left */
+    width: 0; /* Initially hidden */
+    height: 2px; /* Thickness of the underline */
+    background-color: #231651; /* Underline color */
+    transition: width 0.3s ease; /* Animation for the width */
+}
+
+.nav-links a:hover {
+    color: #070410; 
+}
+
+.nav-links a:hover::after {
+    width: 100%; /* Expands the underline on hover */
+}
+
+  /* Button styling in nav */
+  nav button {
+    font-family: "Teko"; /* Use Teko font */
+    width: 130px; /* Fixed width */
+    height: 50px; /* Fixed height */
+    border-radius: 16px; /* Rounded corners */
+    font-size: 2em;/* Large text */
+    color: black; /* Text color */
+    border: 1px solid gray; /* Border color */
+    margin-right: 10px;/* Right margin for spacing */
+  }
+  
+  /* Main content styling */
+  main {
+    display: flex; /* Flexbox layout */
+    flex-direction: column; /* Stack elements vertically */
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center items horizontally */
+  }
+  
+  /* Card design for films */
+  .film {
+    width: 42vw; /* Responsive width */
+    height: 440px; /* Fixed height */
+    border: 0.5px solid black; /* Border for structure */
+    margin-top: 48px; /* Top margin for spacing */
+    font-size: 1vw; /* Relative font size */
+    color: white; /* Text color */
+    box-shadow: 8px 8px 0 #070410; /* Adds shadow for depth */
+}
+  
+/* Image container inside film card */
+.picture {
+  height: 280px; /* Fixed image height */
+}
+
+  .picture img {
+    width: 100%; /* Full width */
+    height: 100%;/* Full height */
+    position: static;
+    object-fit: cover; /* Preserve aspect ratio and fill */
+  }
+  
+  /* Text section inside film card */
+  .text {
+    display: flex; /* Flexbox layout */
+    margin: 10px; /* Outer margin */
+    gap: 2px; /* Space between items */
+}
+  
+  .text  p {
+    font-family: "Lato", sans-serif;/* Use Lato font */
+    overflow: hidden; /* Prevent overflow */
+    text-overflow: ellipsis; /* Add ellipsis for overflow text */
+    height: 17vh; /* Fixed height */
+    width: 78%; /* Relative width */
+    padding: 3px; /* Inner padding */
+    text-align: left; /* aligning the text to the left */
+    color: white;
+  }
+  
+  /* Button inside film card */
+  .text button {
+    font-family: "Teko"; /* Use Teko font */
+    display: flex; /* Flexbox layout */
+    justify-content: center; /* Center text horizontally */
+    align-items: center; /* Center text vertically */
+    padding: 16px; /* Inner padding */
+    width: 45%; /* Button width relative to its container */
+    border: 1px solid rgb(97, 94, 94); /* Gray border */
+    border-radius: 8px; /* Rounded corners */
+    font-size: 2em; /* Large text size */
+    color: black; /* Button text color */
+  }
+  
+/* Secondary film card layout for smaller sections */
+.film1 {
+  width: 19.8vw; /* Relative width */
+  height: 75vh; /* Relative height */
+  border: 1px solid black; /* Border for structure */
+  margin-top: 46px; /* Top margin */
+  font-size: 1vw; /* Responsive font size */
+  box-shadow: 8px 8px 0 #070410; /* Adds shadow for depth */
+}
+
+
+/* Image styling for secondary film card */
+.picture2 img {
+  width: 100%; /* Full width */
+  object-fit: cover; /* Maintain aspect ratio */
+}
+  
+/* About section container */
+.about {
+  display: flex; /* Flexbox layout */
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center items horizontally */
+  margin: 10px; /* Outer margin */
+  gap: 16px; /* Space between items */
+}
+
+/* Text in about section */
+.about p {
+  overflow: hidden; /* Prevent overflow */
+  text-overflow: ellipsis; /* Add ellipsis for overflow text */
+  width: 100%; /* Full width */
+  height: 24vh; /* Fixed height */
+  padding: 5px; /* Inner padding */
+  text-align: left; /* Align text to the left */
+  color: white; /* Text color */
+}
+  
+/* Button in about section */
+.about button {
+  width: 100%; /* Full width */
+  padding: 6px; /* Inner padding */
+  font-size: 2em; /* Large text size */
+  border-radius: 8px; /* Rounded corners */
+  border: 1px solid rgb(97, 94, 94); /* Gray border */
+  color: black; /* Button text color */
+}
+  
+/* Row layout for additional content */
+.row2 {
+  display: flex; /* Flexbox layout */
+  align-items: center; /* Center items vertically */
+  gap: 16px; /* Space between items */
+}
+  
+/* Film card for smaller sections */
+.film2 {
+  width: 41vw; /* Responsive width */
+  height: 36vh; /* Relative height */
+  border: 1px solid black; /* Border for structure */
+  font-size: 1vw; /* Relative font size */
+  display: flex; /* Flexbox layout */
+  justify-content: space-between; /* Space out items */
+  box-shadow: 10px 10px 0 #070410; /* Adds shadow for depth */
+}
+  
+/* Background image styling */
+.picture3 {
+  background-color: #231651; /* Background color */
+  width: 100rem; /* Fixed width */
+  margin: 0; /* Removes margin */
+  overflow: hidden; /* Prevents overflow */
+}
+  
+.picture3 img {
+  height: 100%; /* Full height */
+  width: 100%; /* Full width */
+  object-fit: cover; /* Maintain aspect ratio */
+}
+
+/* About section layout for smaller components */
+.about1 {
+  display: flex; /* Flexbox layout */
+  flex-direction: column; /* Stack items vertically */
+  overflow: hidden; /* Prevent overflow */
+}
+  
+/* Text styling in about section */
+  .about1 p {
+    text-align: left; /* Align text to the left */
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    
+  }
+  
+  .about1 button {
+    font-family: "Teko"; /* Use Teko font */
+    width: 90%;  /* Relative width */
+    padding: 10px; /* Inner padding */
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-top: 90px;
+    font-size: 2em; /* Large text size */
+    border-radius: 8px; /* Rounded corners */
+    color: black; /* Button text color */
+  }
+
+/* Responsive design for desktops */
+@media screen and (min-width: 1024px)  {
+  .film2 {
+    margin: 48px; /* Adds larger margins for spacing */
+  }
+
+  .text{
+    font-size: 14px; /* Larger font size */
+  }
+
+  .about{
+    font-size: 15px; /* Adjust font size */
+  }
+  
+  .about1{
+    font-size: 10px; /* Smaller font size for compact layout */
+  }
+
+  .about1 button {
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-top: 60px;
+  }
+}
+  
+ /* Tablet */
+
+@media screen and (max-width: 1023px) {
+  body {
+    position: relative; /* Relative positioning for layout adjustments */
+    height: 177rem; /* Increased height for tablet layout */
+    margin-bottom: 2rem; /* Bottom margin for spacing */
+  }
+
+  main {
+    display: grid; /* Grid layout */
+    grid-template-columns: 1fr 1fr; /* Two columns */
+    justify-items: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+  }
+
+  .position {
+    position: absolute;
+    bottom: 0;
+  }
+
+  .about1 button{
+    margin-bottom: 20px;
+  }
+
+  .film{
+    width: 20.5rem; /* Adjusted width for smaller screens */
+    height: 55rem;  /* Adjusted height */
+    margin-top: 2rem; /* Top margin for spacing */
+    padding: 0;
+    display: flex; /* Flexbox layout */
+    flex-direction: column;  /* Stack items vertically */
+    justify-content: space-between;  /* Space out items */
+    align-items: center; /* Center items */
+  }
+
+  .film1{
+    width: 20.5rem; /* Adjusted width for smaller screens */
+    height: 55rem;  /* Adjusted height */
+    margin-top: 2rem; /* Top margin for spacing */
+    padding: 0;
+    display: flex; /* Flexbox layout */
+    flex-direction: column;  /* Stack items vertically */
+    justify-content: space-between;  /* Space out items */
+    align-items: center; /* Center items */
+  }
+
+  .film2 {
+    width: 20.5rem; /* Adjusted width for smaller screens */
+    height: 55rem;  /* Adjusted height */
+    margin-top: 2rem; /* Top margin for spacing */
+    padding: 0;
+    display: flex; /* Flexbox layout */
+    flex-direction: column;  /* Stack items vertically */
+    justify-content: space-between;  /* Space out items */
+    align-items: center; /* Center items */
+  }
+
+  .picture img {
+    height: 343px;
+  }
+
+  .picture2 img {
+    height: 343px;
+  }
+
+  .picture3 {
+    width: 100%;
+    height: 343px;
+  }
+
+  .picture3 img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: left;
+    width: 100%;
+    height: 30rem;
+    position: relative;
+  }
+
+  .about{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: left;
+    width: 100%;
+    height: 30rem;
+    position: relative;
+  }
+
+  .about1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: left;
+    width: 100%;
+    height: 30rem;
+    position: relative;
+  }
+  .about p {
+    font-size: 1.5rem;
+    height: 22.1rem;
+    padding: 10px;
+  }
+
+  .about button {
+    width: 95%;
+    height: 20%;
+    padding: 10px;
+    font-size: 2rem;
+    border-radius: 8px;
+  }
+
+  .about1 p {
+    width: 100%;
+    font-size: 1.5rem;
+    height: 22.1rem;
+    line-height: normal;
+    padding: 10px;
+    margin: 7px;
+  }
+
+  .about1 button {
+    width: 95%;
+    height: 20%;
+    padding: 10px;
+    font-size: 2rem;
+    border-radius: 8px;
+  }
+
+  .text p {
+    width: 100%;
+    font-size: 1.5rem;
+    height: 22.1rem;
+    position: absolute;
+    top: 0;
+    padding: 1rem;
+  }
+
+  .text button {
+    width: 95%;
+    height: 20%;
+    padding: 10px;
+    font-size: 2rem;
+    border-radius: 8px;
+    position: absolute;
+    bottom: 0;
+  }
+}
+
+/* Mobile */
+
+@media screen and (max-width: 719px) {
+  body {
+    height: 348rem;
+  }
+
+  .text button{
+    font-family: "Teko"; /* Use Teko font */
+    margin-left: 10px;
+  }
+  main {
+    grid-template-columns: 1fr;
+  }
+
+  nav h1 {
+    font-size: 3rem;
+    text-align: left;
+  }
+
+  nav button {
+    font-family: "Teko"; /* Use Teko font */
+    padding: 4px;
+    font-size: 2rem;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+
+  .film,
+  .film1,
+  .film2 {
+    width: 100%;
+  }
+
+  .picture {
+    width: 100%;
+  }
+
+  .picture2 {
+    width: 100%;
+  }
+
+  .picture3 {
+    width: 100%;
+  }
+
+  .text p {
+    font-size: 1.5rem;
+  }
+
+  .about p {
+    font-size: 1.5rem;
+  }
+
+  .about1 p {
+    font-size: 1.5rem;
+  }
+}
