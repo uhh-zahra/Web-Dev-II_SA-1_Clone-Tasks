@@ -1,150 +1,171 @@
 /* Importing fonts from Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Protest+Guerrilla&display=swap'); 
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+/* Font: "Protest Guerrilla" - used for headings */
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap'); 
+/* Font: "Josefin Sans" - used for body text */
 
 /* Styling for the body of the document */
 body {
     background-color: #e9e9e9;  /* Light gray background color for the page */
     margin: auto;               /* Centers the content in the viewport */
-    color: black;               /* Default text color */
-    font-family: "Josefin Sans", sans-serif;  /* Primary font family for body text */
+    font-family: "Josefin Sans";  /* Primary font family for body text */
+    box-sizing: border-box;     /* Ensures padding and border are included in element's width and height */
 }
 
 /* Styling for header elements (h1, h2, h3) */
 h1, h2, h3 {
-    margin: 0%;                 /* Remove default margin */
-    font-family: "Protest Guerrilla", sans-serif;  /* Font family for headings */
+    margin: 0%;                 /* Remove default margin for consistency in spacing */
+    font-family: "Protest Guerrilla";  /* Font family for headings to create visual contrast */
 }
 
-/* Header section styling */
+/* Specific styling for class "he1" */
+.he1 {
+    font-size: 100px;           /* Sets font size to create a prominent heading */
+    margin-top: 40px;           /* Adds space above the heading for better visual layout */
+}
+
+/* Specific styling for class "p1" */
+.p1 {
+    margin-left: 50px;          /* Adds left margin for indentation or spacing */
+}
+
+
+/* Styling for the header section */
 header {
-    margin: 50px;               /* Margin around the header section */
-    margin-bottom: 0px;         /* Override bottom margin */
-    display: flex;              /* Flex container for layout */
-    flex-direction: column;     /* Stack items vertically */
-    align-items: center;        /* Center items horizontally */
+    margin: 50px;               /* Adds space around the header section */
+    margin-bottom: 0px;         /* Removes bottom margin to align closely with the content below */
+    display: flex;              /* Enables flexbox layout for the header */
+    flex-direction: column;     /* Stacks child elements (e.g., logo and nav) vertically */
+    align-items: center;        /* Centers child elements horizontally */
 }
 
-/* Logo styling within header */
+/* Styling for the logo image within the header */
 .logo img {
-    width: 200px;               /* Fixed width for logo image */
-    height: auto;               /* Maintains aspect ratio */
+    width: 200px;               /* Sets a fixed width for the logo */
+    height: auto;               /* Ensures the logo maintains its aspect ratio */
 }
 
-/* Navigation bar styling */
+/* Styling for the navigation bar */
 nav {
-    width: 50%;                 /* Set width of navigation bar */
-    margin: 50px;               /* Margin around the navigation */
+    width: 50%;                 /* Restricts the navigation bar's width to half of the parent container */
+    margin: 20px;               /* Adds space around the navigation bar */
 }
 
-/* Styling for navigation list */
+/* Styling for the navigation list within the header */
 header nav ul {
-    list-style-type: none;      /* Remove bullet points */
-    display: flex;              /* Flex layout for list items */
-    justify-content: space-between; /* Evenly space navigation links */
-    padding: 0%;                /* Remove padding */
-    text-align: center;         /* Center-align text */
+    list-style-type: none;      /* Removes default bullet points from the list */
+    display: flex;              /* Applies flexbox layout for the navigation items */
+    justify-content: space-between; /* Spreads navigation items evenly across the available space */
+    padding: 0%;                /* Removes default padding around the list */
+    text-align: center;         /* Centers text within each list item */
 }
 
 /* Styling for navigation links */
 nav ul li a {
-    text-decoration: none;      /* Remove underline from links */
-    color: black;               /* Set link color */
+    text-decoration: none;      /* Removes the underline from the links for a cleaner look */
+    color: black;               /* Sets the text color of the navigation links to black */
 }
 
 /* Main content area styling */
 main {
-    background-color: white; /* White background for main content */
-    width: 70%;              /* Set main content width */
-    margin: auto;            /* Center align the main content */
+    background-color: white;    /* Sets a white background for the main content area */
+    width: 70%;                 /* Restricts the main content width to 70% of the viewport */
+    margin: auto;               /* Centers the main content horizontally */
 }
 
-/* Main heading styling */
+/* Main heading styling within the main content */
 main h1 {
-    font-size: 90px;         /* Large font size for main heading */
+    font-size: 90px;            /* Sets a large font size for the main heading to make it prominent */
 }
 
-/* Styling for sub-headings */
+/* Styling for sub-headings within the main content */
 .sub-heading {
-    font-size: 40px;         /* Font size for sub-heading */
+    font-size: 40px;            /* Sets font size for sub-headings to establish a hierarchy */
 }
 
-.Headings {
-    column-count: 3; /*  3 equal columns */
-    column-gap: 40px; /* Space inbtween columns */
-    margin: 30px 0; /* Space above and below the headings section */
-    margin-left: 50px;
-    margin-right: 50px;
+/* Styling for the first paragraph in a section */
+.first p {
+    font-size: 15px;            /* Sets the font size for paragraphs within the class "first" */
 }
+
+/* Styling for the section with multiple headings */
+.Headings {
+    column-count: 3;            /* Divides content into three equal columns */
+    column-gap: 40px;           /* Adds spacing between the columns */
+    margin: 30px 0;             /* Adds vertical spacing above and below the section */
+    margin-left: 50px;          /* Adds padding to the left of the section */
+    margin-right: 50px;         /* Adds padding to the right of the section */
+}
+
 
 /* Image container as a grid layout */
 .image-container {
-    display: grid;           /* Creates a grid container */
-    grid-template-columns: repeat(4, 1fr); /* 4 equal-width columns */
+    display: grid;               /* Defines the container as a grid layout */
+    grid-template-columns: repeat(4, 1fr); /* Creates 4 equal-width columns using a fraction-based layout */
 }
 
 /* Image styling within the grid container */
 .image-container img {
-    width: 100%;             /* Makes image width fill grid cell */
-    height: 100%;            /* Makes image height fill grid cell */
-    object-fit: cover;       /* Ensures image covers area without distortion */
+    width: 100%;                 /* Ensures the image fills the full width of its grid cell */
+    height: 100%;                /* Ensures the image fills the full height of its grid cell */
+    object-fit: cover;           /* Crops the image to fill the area without distortion */
 }
 
 /* Featured album spans multiple rows and columns */
 .featured-album {
-    grid-area: 1 / 1 / span 2 / span 2; /* Positions and sizes featured album */
+    grid-area: 1 / 1 / span 2 / span 2; /* Starts at row 1, column 1, spans 2 rows and 2 columns */
 }
 
 /* Position for album cover 1 */
 .album-cover-1 {
-    grid-area: 1 / 3 / span 1 / span 1; /* Sets grid position for album cover */
+    grid-area: 1 / 3 / span 1 / span 1; /* Places the album cover in row 1, column 3, spanning 1 row and 1 column */
 }
-
 
 /* Positioning for additional album covers in the grid layout */
 .album-cover-2 {
-    grid-area: 1 / 4 / span 1 / span 1; /* Places album cover 2 in the first row, fourth column */
+    grid-area: 1 / 4 / span 1 / span 1; /* Places album cover 2 in row 1, column 4, spanning 1 row and 1 column */
 }
 
 .album-cover-3 {
-    grid-area: 2 / 3 / span 1 / span 1; /* Places album cover 3 in the second row, third column */
+    grid-area: 2 / 3 / span 1 / span 1; /* Places album cover 3 in row 2, column 3, spanning 1 row and 1 column */
 }
 
 .album-cover-4 {
-    grid-area: 2 / 4 / span 1 / span 1; /* Places album cover 4 in the second row, fourth column */
+    grid-area: 2 / 4 / span 1 / span 1; /* Places album cover 4 in row 2, column 4, spanning 1 row and 1 column */
 }
 
-/* Styling for the author part */
+
+/* Styling for the author section */
 .author-part {
-    margin: auto;              /* Centers the author part */
-    width: 75%;                /* Sets width of the section */
-    display: flex;             /* Flex layout for horizontal alignment */
-    align-items: center;       /* Align items vertically in the center */
-    padding: 50px;             /* Adds padding around the section */
-    gap: 50px;                 /* Spacing between items in the flex container */
+    margin: auto;              /* Centers the author section within its container */
+    width: 75%;                /* Sets the section width to 75% of the container */
+    display: flex;             /* Uses flexbox for horizontal alignment of child elements */
+    align-items: center;       /* Vertically centers items in the flex container */
+    padding: 50px;             /* Adds padding around the entire section */
+    gap: 50px;                 /* Adds spacing between child elements in the flex container */
 }
 
-/* Styling for sub-heading in the author part */
+/* Styling for sub-heading within the author section */
 .author-part .sub-heading {
-    text-align: center;        /* Centers text within the sub-heading */
-    font-size: 50px;           /* Large font size for sub-heading */
+    text-align: center;        /* Centers the text within the sub-heading element */
+    font-size: 50px;           /* Sets a large font size for emphasis on the sub-heading */
 }
 
 /* Styling for the author image */
 .author-img img {
-    max-width: 200px;          /* Sets a maximum width for the image */
-    border-radius: 50%;        /* Makes the image circular */
+    max-width: 200px;          /* Limits the maximum width of the image to 200px */
+    border-radius: 50%;        /* Creates a circular image by rounding the corners completely */
 }
 
 /* Footer styling */
 footer {
-    width: 70%;                /* Footer width */
-    margin: auto;              /* Centers footer on the page */
-    background-color: #14181d; /* Dark background color */
-    color: white;              /* White text color */
-    box-sizing: border-box;    /* Ensures padding does not affect width */
-    padding: 20px;             /* Padding inside the footer */
-    text-align: center;        /* Centers text within the footer */
+    width: 70%;                /* Sets the footer width to 70% of the container */
+    margin: auto;              /* Centers the footer horizontally within the container */
+    background-color: #14181d; /* Applies a dark background color to the footer */
+    color: white;              /* Sets the text color to white for contrast */
+    box-sizing: border-box;    /* Ensures padding and borders are included in the width and height calculations */
+    padding: 20px;             /* Adds padding inside the footer for spacing */
+    text-align: center;        /* Centers the text content within the footer */
 }
 
 
@@ -153,81 +174,98 @@ footer {
 
     /* Adjust header and navigation margins */
     header, nav {
-        margin: 30px;
+        margin: 30px;         /* Reduces margin size for a more compact layout on smaller screens */
+    }
+
+    /* Adjust main heading size and margin */
+    .he1 {
+        font-size: 80px;      /* Reduces font size of main heading to fit smaller screens */
+        margin-right: 20px;   /* Adds a right margin for spacing */
+    }
+
+    /* Adjust sub-heading alignment and spacing */
+    .sub-heading {
+        margin-right: 20px;   /* Adds right margin for spacing */
+    }
+
+    /* Adjust paragraph text size and spacing */
+    .p1 {
+        font-size: 18px;      /* Slightly increases paragraph font size for readability */
+        margin-right: 30px;   /* Adds spacing to the right for layout adjustments */
     }
 
     /* Set navigation width and remove bottom margin */
     nav {
-        width: 60%;
-        margin-bottom: 0%;
+        width: 60%;           /* Adjusts navigation width for smaller screens */
+        margin-bottom: 0%;    /* Removes bottom margin to save space */
     }
 
     /* Main content area width adjustment */
     main {
-        width: 80%;
+        width: 80%;           /* Increases the main content area width to fill more space */
     }
 
     /* Logo resizing for smaller screens */
     .logo img {
-        width: 80px;
-        height: auto; /* Maintains aspect ratio */
+        width: 80px;          /* Reduces logo width for better proportions on smaller screens */
+        height: auto;         /* Ensures the logo maintains its aspect ratio */
     }
 
     /* Center align main heading and sub-heading with reduced font size */
-    main h1, .sub-heading {
-        text-align: center;
-        font-size: 50px;
+    main h1, h2 {
+        text-align: center;   /* Centers headings for a more balanced layout */
+        font-size: 10px;      /* Reduces font size to avoid overflow or crowding */
     }
 
-    /* Adjust padding for sub-heading within the intro section */
-    .intro .sub-heading {
-        box-sizing: border-box;
-        padding: 0px 82px;
-    }
+/* Adjust padding for sub-heading within the first section */
+.first .sub-heading {
+    box-sizing: border-box;     /* Ensures padding is included in the element's width/height */
+    padding: 0px 82px;          /* Adds horizontal padding to the sub-heading */
+}
 
-    /* Increase font size for paragraphs */
-    p {
-        font-size: larger;
-    }
+/* Increase font size for paragraphs */
+p {
+    font-size: larger;          /* Makes paragraph text larger for improved readability */
+}
 
-    /* Change multi-paragraph layout to a single column */
-    .multi-paragraph {
-        column-count: 1;
-    }
+/* Change heading layout to a single column */
+.Headings {
+    column-count: 1;            /* Changes layout to a single column for better readability on smaller screens */
+}
 
-    /* Adjust image container to use 2 columns instead of 4 */
-    .image-container {
-        grid-template-columns: repeat(2, 1fr);
-    }
+/* Adjust image container to use 2 columns instead of 4 */
+.image-container {
+    grid-template-columns: repeat(2, 1fr); /* Changes the grid to have 2 columns instead of 4 */
+}
 
-    /* Set grid area for each item in image container */
-    .image-container div {
-        grid-area: span 1;
-    }
+/* Set grid area for each item in the image container */
+.image-container div {
+    grid-area: span 1;          /* Ensures each item spans one grid area */
+}
 
-    /* Hide the fourth album cover on smaller screens */
-    .album-cover-4 {
-        display: none;
-    }
+/* Hide the fourth album cover on smaller screens */
+.img-photo-4 {
+    display: none;              /* Removes the fourth album cover from view to optimize space */
+}
 
-    /* Reduce padding for intro and multi-paragraph sections */
-    .intro, .multi-paragraph {
-        padding: 30px;
-    }
+/* Reduce padding for first and headings sections */
+.first, .Headings {
+    padding: 30px;              /* Reduces padding for better use of space on smaller screens */
+}
 
-    /* Adjust author part to full width with smaller padding and gap */
-    .author-part {
-        margin: auto;
-        width: 100%;
-        box-sizing: border-box;
-        padding: 30px;
-        gap: 30px;
-    }
+/* Adjust author part to full width with smaller padding and gap */
+.author-part {
+    margin: auto;               /* Centers the section horizontally */
+    width: 100%;                /* Expands section to full width */
+    box-sizing: border-box;     /* Ensures padding is included in width calculations */
+    padding: 30px;              /* Reduces padding for compact layout */
+    gap: 30px;                  /* Reduces space between items in the flex container */
+}
 
-    /* Footer width adjustment */
-    footer {
-        width: 80%;
-    }
+/* Footer width adjustment */
+footer {
+    width: 80%;                 /* Increases the footer width to accommodate smaller screens */
+}
 }
 
 /* Media query for mobile devices with screens up to 719px */
@@ -236,6 +274,10 @@ footer {
     /* Adjust margins for header and navigation */
     header, nav {
         margin: 20px;
+    }
+
+    .first p {
+        font-size: 12px;
     }
 
     /* Main content area takes full width on small screens */
@@ -253,13 +295,13 @@ footer {
         grid-template-columns: repeat(1, 1fr);
     }
 
-    /* Reduce padding for intro and multi-paragraph sections */
-    .intro, .multi-paragraph {
+    /* Reduce padding for first and heading sections */
+    .first, .Headings {
         padding: 20px;
     }
 
-    /* Adjust padding for sub-heading within the intro section */
-    .intro .sub-heading {
+    /* Adjust padding for sub-heading within the first section */
+    .first .sub-heading {
         padding: 0px 42px;
     }
 
@@ -277,11 +319,16 @@ footer {
         padding: 5px;
         font-size: 18px;
     }
+
+    .img-photo-4{
+        display: none;
+    }
 }
 
 
 /* Media query for very small screens and mobile devices up to 539px */
 @media screen and (max-width: 539px) {
+
 
     /* Reduce margins for header and navigation */
     header, nav {
@@ -293,14 +340,8 @@ footer {
         width: 100%;
     }
 
-    /* Reduce padding and gap for intro and multi-paragraph sections */
-    .intro, .multi-paragraph {
-        padding: 12px; /* Smaller padding for compact spacing */
-        gap: 12px;     /* Smaller gap between elements */
-    }
-
-    /* Adjust padding for sub-heading within the intro section */
-    .intro .sub-heading {
+    /* Adjust padding for sub-heading within the first section */
+    .first .sub-heading {
         padding: 0px 52px;
     }
 
